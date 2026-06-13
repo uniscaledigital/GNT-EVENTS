@@ -51,28 +51,6 @@ function Services() {
           </article>
         ))}
       </section>
-
-      <section className="bg-card py-28 px-6 lg:px-10">
-        <div className="max-w-6xl mx-auto text-center">
-          <span className="eyebrow">Our Process</span>
-          <h2 className="font-serif text-4xl md:text-6xl mt-4">From Vision to Vidaai</h2>
-          <span className="gold-divider mx-auto mt-8" />
-          <div className="grid md:grid-cols-4 gap-8 mt-16 text-left">
-            {[
-              { n: "01", t: "Discover", d: "We listen — to family, culture, dreams, dates." },
-              { n: "02", t: "Design", d: "Mood boards, palettes, floor plans and renders." },
-              { n: "03", t: "Produce", d: "Vendor curation, builds, rehearsals, run-of-show." },
-              { n: "04", t: "Deliver", d: "On-ground choreography while you live the moment." },
-            ].map((p) => (
-              <div key={p.n} className="luxury-card p-8">
-                <div className="font-serif text-4xl text-gold">{p.n}</div>
-                <h3 className="font-serif text-2xl mt-4">{p.t}</h3>
-                <p className="mt-3 text-muted-foreground leading-relaxed">{p.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </SiteLayout>
   );
 }
