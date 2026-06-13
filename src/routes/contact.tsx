@@ -9,8 +9,8 @@ const whatsappNumber = "919885190750";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — GNT Events and Decorators" },
-      { name: "description", content: "Plan your wedding or event with GNT Events and Decorators in Guntur. Reach our team by phone, email or the enquiry form." },
+      { title: "Contact — G80 Events & Decorators" },
+      { name: "description", content: "Plan your wedding or event with G80 Events & Decorators in Guntur. Reach our team by phone, email or the enquiry form." },
     ],
   }),
   component: Contact,
@@ -30,7 +30,7 @@ function Contact() {
     const message = String(formData.get("message") ?? "").trim();
 
     const lines = [
-      `Hello GNT Events, I am ${name}.`,
+      `Hello G80 Events, I am ${name}.`,
       `Phone: ${phone}`,
       email ? `Email: ${email}` : null,
       type ? `Event Type: ${type}` : null,

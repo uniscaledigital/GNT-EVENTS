@@ -35,7 +35,7 @@ export function Header() {
             G
           </span>
           <div className="leading-tight">
-            <div className="font-serif text-xl tracking-wide">GNT Events and Decorators</div>
+            <div className="font-serif text-xl tracking-wide">G80 Events & Decorators</div>
             <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
               Guntur
             </div>

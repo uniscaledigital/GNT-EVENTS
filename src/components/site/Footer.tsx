@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="bg-foreground text-background mt-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20 grid lg:grid-cols-4 gap-12">
         <div className="lg:col-span-2">
-          <div className="font-serif text-3xl mb-4">GNT Events and Decorators</div>
+          <div className="font-serif text-3xl mb-4">G80 Events & Decorators</div>
           <span className="gold-divider mb-6" />
           <p className="text-sm text-background/70 max-w-md leading-relaxed">
             A luxury wedding and event design house based in Guntur.
@@ -61,7 +61,7 @@ export function Footer() {
 
       <div className="border-t border-background/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col md:flex-row justify-between text-xs text-background/50 tracking-wider gap-2">
-          <p>© {new Date().getFullYear()} GNT Events and Decorators. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} G80 Events & Decorators. All rights reserved.</p>
           <p>Crafted with care in Guntur.</p>
         </div>
       </div>

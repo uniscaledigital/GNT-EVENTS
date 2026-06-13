@@ -12,8 +12,8 @@ import hero from "@/assets/hero-wedding.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — GNT Events and Decorators" },
-      { name: "description", content: "A curated album of weddings, receptions and celebrations designed by GNT Events and Decorators." },
+      { title: "Gallery — G80 Events & Decorators" },
+      { name: "description", content: "A curated album of weddings, receptions and celebrations designed by G80 Events & Decorators." },
     ],
   }),
   component: Gallery,
