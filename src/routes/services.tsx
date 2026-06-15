@@ -18,12 +18,9 @@ export const Route = createFileRoute("/services")({
 });
 
 const services = [
-  { img: sWedding, eyebrow: "Signature", title: "Luxury Weddings", desc: "Mandap to vidaai — multi-day weddings designed end-to-end with bespoke decor, floristry, hospitality and choreography." },
-  { img: g2, eyebrow: "Pre-Wedding", title: "Haldi, Mehendi & Sangeet", desc: "Vibrant rituals reimagined as photogenic, intimate gatherings — marigold canopies, brass urlis, music-led nights." },
-  { img: g3, eyebrow: "The Big Night", title: "Receptions", desc: "Cinematic reception stages, ambient lighting, custom menus and floral compositions for the grand finale." },
-  { img: sCorporate, eyebrow: "Business", title: "Corporate Events", desc: "Product launches, conferences, award nights and dealer meets with broadcast-grade production and brand design." },
-  { img: sPrivate, eyebrow: "Intimate", title: "Private Celebrations", desc: "Milestone birthdays, anniversaries, baby showers and house warmings — designed with quiet luxury." },
-  { img: g4, eyebrow: "Production", title: "Decor, Sound & Lighting", desc: "Stage design, drapery, florals, sound systems and intelligent lighting — fully managed in-house." },
+  { img: sWedding, eyebrow: "Signature", title: "Weddings & Receptions", desc: "Creating timeless wedding experiences with elegant mandap designs, floral arrangements, traditional decor, and complete celebration styling." },
+  { img: g2, eyebrow: "Cultural", title: "Traditional Ceremonies", desc: "Beautifully crafted setups for Haldi, engagements, poojas, and family celebrations with cultural detailing and premium execution." },
+  { img: g3, eyebrow: "Bespoke", title: "Custom Event Decor", desc: "Personalized themes, stage concepts, lighting arrangements, and floral styling designed uniquely for every occasion." },
 ];
 
 function Services() {

@@ -50,13 +50,13 @@ function About() {
       <section className="bg-card py-28 px-6 lg:px-10">
         <div className="max-w-6xl mx-auto text-center">
           <span className="eyebrow">Our Philosophy</span>
-          <h2 className="font-serif text-4xl md:text-6xl mt-4">Tradition, treated with couture care.</h2>
+          <h2 className="font-serif text-4xl md:text-6xl mt-4">Rooted in tradition.<br />Designed with elegance.</h2>
           <span className="gold-divider mx-auto mt-8" />
           <div className="grid md:grid-cols-3 gap-10 mt-16 text-left">
             {[
-              { t: "Design First", d: "Every event opens with a mood board, a story arc and a colour story — drawn before a single chair is booked." },
-              { t: "Rooted in Ritual", d: "We honour Telugu, North Indian and inter-cultural traditions with respectful, well-researched detail." },
-              { t: "Calm in the Chaos", d: "Our crew runs the timeline so your family experiences only the celebration, never the logistics." },
+              { t: "Custom Decoration Concepts", d: "Every stage, backdrop, and floral arrangement is thoughtfully designed to match your celebration." },
+              { t: "Complete Event Styling", d: "From mandap setup to lighting and decor finishing, every detail is handled with care." },
+              { t: "Local Celebration Experts", d: "Serving memorable events across Guntur, Vijayawada and surrounding regions." },
             ].map((v) => (
               <div key={v.t} className="luxury-card p-10">
                 <h3 className="font-serif text-2xl">{v.t}</h3>

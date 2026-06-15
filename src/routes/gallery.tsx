@@ -71,9 +71,6 @@ function Gallery() {
               <div className="rounded-3xl overflow-hidden">
                 <img src={img.src} alt={img.label} loading="lazy" className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-[1.2s]" />
               </div>
-              <figcaption className="mt-4 text-xs tracking-[0.22em] uppercase text-muted-foreground text-center">
-                {img.label}
-              </figcaption>
             </figure>
           ))}
         </div>

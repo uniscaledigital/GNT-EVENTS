@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "GNT Events & Decorators — Luxury Wedding & Event Planners in Guntur" },
-      { name: "description", content: "Royal Indian weddings, corporate galas and bespoke celebrations crafted in Guntur by GNT Events & Decorators." },
+      { name: "description", content: "Traditional Indian weddings, mandap decorations and bespoke celebrations crafted in Guntur by GNT Events & Decorators." },
 
     ],
   }),
@@ -21,9 +21,9 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: Heart, title: "Weddings & Receptions", image: sWedding, desc: "Heirloom weddings woven with tradition, florals, and timeless elegance." },
-  { icon: Crown, title: "Corporate & Galas", image: sCorporate, desc: "Conferences, product launches and award nights with cinematic production value." },
-  { icon: Gem, title: "Private Celebrations", image: sPrivate, desc: "Birthdays, anniversaries and milestone soirées designed with intimate care." },
+  { icon: Heart, title: "Weddings & Receptions", image: sWedding, desc: "Creating timeless wedding experiences with elegant mandap designs, floral arrangements, traditional decor, and complete celebration styling." },
+  { icon: Crown, title: "Traditional Ceremonies", image: sCorporate, desc: "Beautifully crafted setups for Haldi, engagements, poojas, and family celebrations with cultural detailing and premium execution." },
+  { icon: Gem, title: "Custom Event Decor", image: sPrivate, desc: "Personalized themes, stage concepts, lighting arrangements, and floral styling designed uniquely for every occasion." },
 ];
 
 function Home() {
@@ -62,8 +62,8 @@ function Home() {
         <p className="text-muted-foreground mt-8 text-lg leading-relaxed">
           Born in Guntur and inspired by the grandeur of regional weddings, GNT Events & Decorators
 
-          blends Sabyasachi-rich aesthetics with modern event craft. From mandap to
-          metric, we hold every thread of your celebration with reverence.
+          blends traditional aesthetics with premium event styling. From mandap to
+          floral detailing, we hold every thread of your celebration with reverence.
         </p>
         <Link to="/about" className="inline-flex items-center gap-2 mt-10 text-sm tracking-[0.22em] uppercase border-b border-foreground pb-1 hover:text-gold hover:border-gold transition-colors">
           Our Story <ArrowRight size={14} />
@@ -107,14 +107,14 @@ function Home() {
           <div>
             <span className="eyebrow">Why GNT</span>
             <h2 className="font-serif text-4xl md:text-5xl mt-4 leading-tight">
-              Royal in spirit.<br />Refined in execution.
+              Rooted in tradition.<br />Designed with elegance.
             </h2>
             <span className="gold-divider mt-8" />
             <div className="mt-10 space-y-8">
               {[
-                { t: "Bespoke Design Studio", d: "Every mandap, table and light cue is drawn from scratch for your story — never templated." },
-                { t: "End-to-End Production", d: "Florals, catering liaison, sound, lighting, photography — coordinated under one roof." },
-                { t: "South India Specialists", d: "Deep vendor network across Guntur, Vijayawada, Hyderabad and Visakhapatnam." },
+                { t: "Custom Decoration Concepts", d: "Every stage, backdrop, and floral arrangement is thoughtfully designed to match your celebration." },
+                { t: "Complete Event Styling", d: "From mandap setup to lighting and decor finishing, every detail is handled with care." },
+                { t: "Local Celebration Experts", d: "Serving memorable events across Guntur, Vijayawada and surrounding regions." },
               ].map((f) => (
                 <div key={f.t} className="border-l border-gold pl-6">
                   <h3 className="font-serif text-2xl">{f.t}</h3>
@@ -154,13 +154,9 @@ function Home() {
             <Link to="/gallery" className="btn-outline-luxury self-start md:self-end">View Full Gallery</Link>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { src: g1, label: "Haldi Ceremony · Guntur" },
-              { src: g2, label: "Sangeet Night · Andhra Pradesh" },
-              { src: g3, label: "Marigold Backdrop · Guntur" },
-            ].map((img, i) => (
+            {[g1, g2, g3].map((img, i) => (
               <div key={i} className="rounded-3xl overflow-hidden aspect-[4/5] group">
-                <img src={img.src} alt={img.label} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s]" />
+                <img src={img} alt="Gallery feature image" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s]" />
               </div>
             ))}
           </div>
