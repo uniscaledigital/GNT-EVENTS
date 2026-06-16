@@ -37,7 +37,7 @@ export function Header() {
             src={logo}
             alt="GNT Events & Decorators"
             style={{ objectFit: "contain", imageRendering: "auto" }}
-            className="h-[52px] lg:h-[64px] w-auto transition-transform duration-500 group-hover:scale-105"
+            className="w-[110px] lg:w-[140px] h-auto transition-transform duration-500 group-hover:scale-105"
           />
         </Link>
 

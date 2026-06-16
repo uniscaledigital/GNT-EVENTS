@@ -14,7 +14,7 @@ export function Footer() {
             src={logoWhite}
             alt="GNT Events & Decorators"
             style={{ objectFit: "contain", imageRendering: "auto" }}
-            className="h-[84px] w-auto mb-6"
+            className="w-[160px] h-auto mb-6"
           />
           <span className="gold-divider mb-6" />
           <p className="text-sm text-background/70 max-w-md leading-relaxed">
