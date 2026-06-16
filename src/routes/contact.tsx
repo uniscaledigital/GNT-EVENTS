@@ -82,11 +82,24 @@ function Contact() {
             title="Studio"
             href={studioMapsUrl}
             lines={[
-              "SBI Colony Vikas Nagar road",
-              "beside Amaravatihi Rythubazar jkc Road, Andhra Pradesh 522006",
+              "SBI Colony, Vikas Nagar Main Road,",
+              "beside Amaravathi Rythu Bazar JKC Road,",
+              "Guntur, Andhra Pradesh - 522006",
             ]}
+            highlightGuntur
           />
-          <ContactRow icon={Phone} title="Call" href="tel:+919885190750" lines={["+91 98851 90750"]} />
+          <div className="flex gap-5">
+            <span className="w-12 h-12 rounded-full bg-foreground text-background flex items-center justify-center shrink-0">
+              <Phone size={18} />
+            </span>
+            <div>
+              <div className="eyebrow">Call</div>
+              <div className="mt-2 text-foreground leading-relaxed flex flex-col gap-1">
+                <a href="tel:+919885190750" target="_blank" rel="noreferrer" className="hover:text-gold transition">+91 98851 90750</a>
+                <a href="tel:9701010770" target="_blank" rel="noreferrer" className="hover:text-gold transition">97010 10770</a>
+              </div>
+            </div>
+          </div>
           <ContactRow icon={Mail} title="Email" href="mailto:gntevents@gmail.com" lines={["gntevents@gmail.com"]} />
           <ContactRow icon={Clock} title="Studio Hours" lines={["Open 24 hours", "Available every day"]} />
         </aside>
@@ -140,7 +153,17 @@ function Field({ label, name, type = "text", required, placeholder, className = 
   );
 }
 
-function ContactRow({ icon: Icon, title, lines, href }: { icon: typeof MapPin; title: string; lines: string[]; href?: string }) {
+function ContactRow({ icon: Icon, title, lines, href, highlightGuntur }: { icon: typeof MapPin; title: string; lines: string[]; href?: string; highlightGuntur?: boolean }) {
+  const renderLine = (l: string) => {
+    if (highlightGuntur && l.startsWith("Guntur")) {
+      return (
+        <div key={l}>
+          <span style={{ color: "#B88746" }}>Guntur</span>{l.slice(6)}
+        </div>
+      );
+    }
+    return <div key={l}>{l}</div>;
+  };
   return (
     <div className="flex gap-5">
       <span className="w-12 h-12 rounded-full bg-foreground text-background flex items-center justify-center shrink-0">
@@ -151,10 +174,10 @@ function ContactRow({ icon: Icon, title, lines, href }: { icon: typeof MapPin; t
         <div className="mt-2 text-foreground leading-relaxed">
           {href ? (
             <a href={href} target="_blank" rel="noreferrer" className="hover:text-gold transition">
-              {lines.map((l) => <div key={l}>{l}</div>)}
+              {lines.map((l) => renderLine(l))}
             </a>
           ) : (
-            lines.map((l) => <div key={l}>{l}</div>)
+            lines.map((l) => renderLine(l))
           )}
         </div>
       </div>

@@ -46,15 +46,22 @@ export function Footer() {
           <ul className="space-y-4 text-sm text-background/80">
             <li className="flex gap-3">
               <MapPin size={16} className="mt-0.5 text-gold shrink-0" />
-              <a href={studioMapsUrl} target="_blank" rel="noreferrer" className="hover:text-gold transition">
-                SBI Colony Vikas Nagar road, beside Amaravatihi Rythubazar jkc Road, Andhra Pradesh 522006
+              <a href={studioMapsUrl} target="_blank" rel="noreferrer" className="hover:text-gold transition leading-relaxed">
+                SBI Colony, Vikas Nagar Main Road,<br />
+                beside Amaravathi Rythu Bazar JKC Road,<br />
+                <span style={{ color: "#B88746" }}>Guntur</span>, Andhra Pradesh - 522006
               </a>
             </li>
             <li className="flex gap-3">
               <Phone size={16} className="mt-0.5 text-gold shrink-0" />
-              <a href="tel:+919885190750" className="hover:text-gold transition">
-                +91 98851 90750
-              </a>
+              <div className="flex flex-col gap-1">
+                <a href="tel:+919885190750" className="hover:text-gold transition">
+                  +91 98851 90750
+                </a>
+                <a href="tel:9701010770" className="hover:text-gold transition">
+                  97010 10770
+                </a>
+              </div>
             </li>
             <li className="flex gap-3">
               <Mail size={16} className="mt-0.5 text-gold shrink-0" />
