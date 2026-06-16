@@ -75,7 +75,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-background/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col md:flex-row justify-between text-xs text-background/50 tracking-wider gap-2">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col items-center justify-center text-center text-xs text-background/50 tracking-wider gap-2">
           <p>© {new Date().getFullYear()} GNT Events & Decorators. All rights reserved.</p>
         </div>
       </div>
