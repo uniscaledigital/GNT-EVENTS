@@ -77,7 +77,29 @@ export function Footer() {
       <div className="border-t border-background/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col md:flex-row justify-between text-xs text-background/50 tracking-wider gap-2">
           <p>© {new Date().getFullYear()} GNT Events & Decorators. All rights reserved.</p>
-          <p>Crafted with care in Guntur.</p>
+        </div>
+      </div>
+
+      {/* Developer Branding Strip */}
+      <div style={{ background: "#0d1117" }} className="w-full border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex flex-col items-center gap-1.5 text-center">
+          <p className="text-xs text-white/50 tracking-wide">
+            Website Designed &amp; Developed by{" "}
+            <a
+              href="https://uniscale-flame.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-white/90 hover:text-[#B88746] transition-colors duration-300"
+            >
+              Uniscale Digital
+            </a>
+          </p>
+          <a
+            href="mailto:uniscaledigital@gmail.com"
+            className="text-[10px] text-white/35 hover:text-[#B88746] tracking-wider transition-colors duration-300"
+          >
+            uniscaledigital@gmail.com
+          </a>
         </div>
       </div>
     </footer>
