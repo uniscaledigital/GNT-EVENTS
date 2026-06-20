@@ -132,9 +132,9 @@ function Home() {
       <section className="py-24 px-6 lg:px-10 bg-[#fff8f0]">
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { n: "6+", l: "Years of Service" },
-            { n: "200+", l: "Projects Completed" },
-            { n: "10+", l: "Staff Members" },
+            { n: "14+", l: "Years of Service" },
+            { n: "800+", l: "Projects Completed" },
+            { n: "20+", l: "Staff Members" },
             { n: "50+", l: "Luxury Venue Decorations" },
           ].map((s) => (
             <div key={s.l} className="rounded-[2rem] border border-orange-100 bg-white/80 px-8 py-14 text-center shadow-[0_20px_60px_rgba(255,140,80,0.08)]">
