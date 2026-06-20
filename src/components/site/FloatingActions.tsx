@@ -2,7 +2,7 @@ import { MapPin, Phone } from "lucide-react";
 
 export function FloatingActions() {
   return (
-    <div className="fixed right-4 md:right-6 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-50 max-md:top-auto max-md:bottom-24 max-md:translate-y-0">
+    <div className="fixed right-4 md:right-6 bottom-6 md:bottom-10 flex flex-col gap-4 z-50">
       <a
         href="https://www.google.com/maps/place/GNT+Events+%26+Decorators/@16.3228006,80.4180357,17z/"
         target="_blank"
